@@ -1,30 +1,26 @@
+import axios from "axios";
 
-import axios from 'axios';
+import { showAlert } from "./alerts";
 
-import { showAlert } from './alerts';
-
-export const signUp = async (name, email , password , passwordConfirm) => {
-
+export const signUp = async (name, email, password, passwordConfirm) => {
   try {
     const res = await axios({
-      method: 'POST',
-      url: '/api/v1/users/signup',
+      method: "POST",
+      url: "/api/v1/users/signup",
       data: {
         name,
         email,
         password,
         passwordConfirm,
-      }
+      },
     });
-    if (res.data.status === 'success'){
-      showAlert('success', 'Sign up successfully');
-      window.setTimeout(() =>{
-        location.assign('/')
+    if (res.data.status === "success") {
+      showAlert("success", "Sign up successfully");
+      window.setTimeout(() => {
+        location.assign("/");
       }, 500);
     }
-  }
-  catch (err) {
-    showAlert('error',err.response.data.message);
+  } catch (err) {
+    showAlert("error", err.response.data.message);
   }
 };
-``
