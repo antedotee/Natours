@@ -71,4 +71,4 @@ API Features:
 
 ### Deployment
 The website is deployed with Git into render:
-https://natours-ijrr.onrender.com/
+(https://natours-fonh.onrender.com/)
