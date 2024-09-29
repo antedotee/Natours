@@ -2,8 +2,6 @@
 
 ## An Awesome Tour Booking Site Built on Top of NodeJS
 
-### Deployed Version
-Live demo (Feel free to visit) 👉 : [Natours]((https://natours-fonh.onrender.com/))
 
 ### Key Features
 - Authentication and Authorization
